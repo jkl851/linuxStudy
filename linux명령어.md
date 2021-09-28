@@ -14,10 +14,11 @@ cp [옵션] 원본 사본
 cp 원본 디렉토리  -> 디렉토리로 원본파일을 카피해 넣음
 
 /bin/명령어 alias 없이 원형 그대로의 명령어 사용
+
 ex) cp명령어는 cp -i 가 기본으로 alias 되어있음
-	alias    : alias조회
-	alias la='ls -la'   : 유저 접속 동안만 적용
-	vi .bashrc    : 영구 설정가능
+alias    : alias조회
+alias la='ls -la'   : 유저 접속 동안만 적용
+vi .bashrc    : 영구 설정가능
 
 	cp -R hello /usr/local/douzone/
 
@@ -27,6 +28,7 @@ cp 명령어는  파일을 복사 하지만 mv 명령어는 파일을 이동하�
 unix에는 rename 명령어가 따로 없다. 즉, 파일 이름을 바꿀 때도 사용할 수 있는 명령어이다.
 
 - 사용법
+- 
 mv [옵션] 원본 목적지
 *원본, 목적지의 경로가 같으면 rename의 역할을 수행 
 
