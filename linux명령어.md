@@ -108,10 +108,15 @@ find [시작 디렉터리] [조건]
 파일 이름이 문자열과 일치하는 파일을 찾는다. 문자열에는 다음과 같은 형식으로 지정할 수 있다.
 
 “log” : 파일이름이 log인 파일을 찾는다.
+
 “*log” : 파일 이름이 log로 끝나는 모든 파일을 찾는다.
+
 “log*” : 파일 이름이 log로 시작하는 모든 파일을 찾는다.
+
 “*log*” : 파일 이름 중간에 log가 들어가 있는 파일을 찾는다.
+
 “?log” : 파일 이름에서 첫 글자는 어떤 문자라도 상관없고 log로 끝나는 4개 문자 이름의 파일
+
 “log??” : 파일 이름 시작이 log로 시작하고 끝의 두 문자가 어떤 것이어도 상관없는 5개 문자 이름의 파일
 
 –user “유저이름”
@@ -196,7 +201,6 @@ chmod [옵션] 소유자:소유그룹 파일명
 --help : 도움말을 출력한다.
 --version : 버전 정보를 보여준다.
 
-
 	chown -R webmaster:wheel dowork
 
 
@@ -219,8 +223,7 @@ zip   (.zip)
 -v : 처리 중인 파일을 자세하게 보여준다. 
 -f : 파일을 지정한다.
 -z : 압축
-
-
+	
 	tar cvf webmaster.tar /home/webmaster
 	tar xvf webmaster.tar
 	tar cvfz webmaster.tar.gz /home/webmaster/    
