@@ -10,7 +10,8 @@ cp [옵션] 원본 사본
 -f : 만약 복사 대상에 같은 이름의 파일이 존재하면 강제로 지우고 복사한다.
 -R : 디렉토리를 복사할 경우 그 안에 포함된 모든 하위 디렉터리와 파일들을 모두 복사한다.
 
-ex) cp -R hello /usr/local/douzone/    :  hello 디렉토리를 경로밑으로 이동
+	cp -R hello /usr/local/douzone/
+         :  hello 디렉토리를 경로밑으로 이동
 
 
 cp 원본 디렉토리  -> 디렉토리로 원본파일을 카피해 넣음
@@ -21,7 +22,7 @@ ex) cp명령어는 cp -i 가 기본으로 alias 되어있음
 	alias la='ls -la'   : 유저 접속 동안만 적용
 	vi .bashrc    : 영구 설정가능
 
-cp -R hello /usr/local/douzone/
+	cp -R hello /usr/local/douzone/
 
 
 3.4.4 mv
@@ -84,7 +85,7 @@ more 옵션
 
 사용법
 find [시작 디렉터리] [조건]
-ex) find / -name '*log'
+	find / -name '*log'
 
 [시작 디렉터리]부터 시작해서 하위 디렉터리의 모든 파일을 [조건]에 맞는 파일을 검색한다.
 [시작 디렉터리]를 / 로 지정하면 시스템 내의 모든 파일을 검색하게 된다.
@@ -101,15 +102,15 @@ ex) find / -name '*log'
 
 2. –user “유저이름”
 특정 유저가 소유한 파일들을 모두 찾는다.
-ex) find / -user "kickscar”
+	find / -user "kickscar”
 
 3. –perm “퍼미션”
 명시된 퍼미션으로 된 파일을 찾을 때 사용한다.
-ex) find /home -perm 755
+	find /home -perm 755
 
 4. –type ?
 ? 형태의 파일을 찾는다.
-ex) find /dev -type c
+	find /dev -type c
 
 그 밖에  -size 파일크기, -atime 날짜, -newer 파일 등으로 파일을 찾을 수 있다.
 
@@ -123,18 +124,18 @@ grep [옵션] 표현  [파일(들)]
 옵션
 -v : 일치되는 내용이 없는 라인을 표시한다.
 파이프라인으로 많이씀
-ex) ps -ef | grep sshd
-     ps -ef | grep sshd | grep -v grep
+	ps -ef | grep sshd
+	ps -ef | grep sshd | grep -v grep
 
 -c : 일치되는 내용이 있는 행의 개수를 표시한다.
-ex) grep -c root /var/log/secure
+	grep -c root /var/log/secure
 
 -n : 일치되는 내용이 있는 행은 행 번호와 함께 표시된다.
-ex) grep -n alias /etc/profile.d/*
+	grep -n alias /etc/profile.d/*
 
 3.4.10 파이프(pipe)
 프로그램의 실행결과를 다른 프로그램의 입력으로 연결한다. 둘 이상의 명령을 함께 사용하고, 한 명령어의 출력결과를 다른 명령어의 입력으로 전환하는 것을 파이프(pipe)라 한다.
-ex) grep root /var/log/secure | less
+	grep root /var/log/secure | less
 
 
 3.4.11 리다이렉션(redirection)
@@ -145,9 +146,10 @@ ex) grep root /var/log/secure | less
 명령어 >> 파일 : 파일이 없다면 생성하고, 있다면 기존의 내용에 추가한다.
 명령어 < 파일 : 파일에서 표준 입력(stdin)을 받는다.
 
-ex ) echo "Hello World" > hello.txt
-     echo "Hello World2" >> hello.txt     
-	 : 파일실행 결과  
+	echo "Hello World" > hello.txt
+	echo "Hello World2" >> hello.txt     
+	
+	: 파일실행 결과  
 	Hello World
 	Hello World2
 
@@ -189,6 +191,6 @@ tar 기본적으로 압축을 하지 않고 묶어 주는 역할(아카이브, a
 -f : 파일을 지정한다.
 -z : 압축
 
-ex) tar cvf webmaster.tar /home/webmaster
-     tar xvf webmaster.tar
-     tar cvfz webmaster.tar.gz /home/webmaster/   : 압축을 같이 진행
+	tar cvf webmaster.tar /home/webmaster
+	tar xvf webmaster.tar
+	tar cvfz webmaster.tar.gz /home/webmaster/    //압축을 같이 진행
