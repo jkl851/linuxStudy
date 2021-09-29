@@ -149,3 +149,5 @@ ifconfig 에서 설정된 IP 주소는 시스템이 재 시작하게 되면 반�
 <hr>
 	
 	systemctl restart network
+	
+![실습화면01](./img/net01.PNG)
