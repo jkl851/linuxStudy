@@ -108,8 +108,9 @@ ifconfig 에서 설정된 IP 주소는 시스템이 재 시작하게 되면 반�
 
 - ip바꾸기 실습
 
+
 	ifconfig 
-	/ IP  10.0.2.15 , NETMASK 255.255.255.0
+	/ IP 10.0.2.15, NETMASK 255.255.255.0
 	
 	nslookup  
 	/ DNS 168.126.63.1
