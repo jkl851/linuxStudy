@@ -1,6 +1,8 @@
 
 *192 나 10 으로 시작하는건  사설 ip
 
+
+
 ## 1.  ping
 ping 명령을 이용하면 다름 시스템의 네트워크가 현재 동작 중인지 알 수가 있다.
 
@@ -27,6 +29,15 @@ ping 응답 설정 여부 확인
 ping 응답을 막는 설정하기 위해 vi /etc/sysctl.conf를 열고 다음을 추가 한다
 
 	net.ipv4.icmp_echo_ignore_all=1
+	
+
+리눅스에서 traceroute 확인
+
+
+	라이브러리설치
+	yum -y install traceroute
+
+	traceroute url
 
 
 ## 2.  nslookup
