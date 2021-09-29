@@ -150,4 +150,4 @@ ifconfig 에서 설정된 IP 주소는 시스템이 재 시작하게 되면 반�
 	
 	systemctl restart network
 	
-![실습화면01](./img/net01.png)
+![net01](https://user-images.githubusercontent.com/81539344/135203408-2e9c089d-6f38-4ae3-8bac-4fd7ee921949.PNG)
