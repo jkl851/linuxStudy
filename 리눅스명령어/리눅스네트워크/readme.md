@@ -109,14 +109,19 @@ ifconfig 에서 설정된 IP 주소는 시스템이 재 시작하게 되면 반�
 - ip바꾸기 실습
 
 	ifconfig 
-	// IP  10.0.2.15 , NETMASK 255.255.255.0
+	/ IP  10.0.2.15 , NETMASK 255.255.255.0
+	
 	nslookup  
-	// DNS 168.126.63.1
+	/ DNS 168.126.63.1
+	
 	netstat-r  
-	// GATEWAY 10.0.2.2
+	/ GATEWAY 10.0.2.2
 
 <hr>
+
+
 	cd /etc/sysconfig/network-scripts/
+	
 	vi ifcfg-enp0s3
 	
 	세팅변경
@@ -130,4 +135,5 @@ ifconfig 에서 설정된 IP 주소는 시스템이 재 시작하게 되면 반�
 	DNS2=168.126.63.2
 
 <hr>
+	
 	systemctl restart network
