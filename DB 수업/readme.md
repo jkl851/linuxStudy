@@ -209,7 +209,7 @@ Database을 선택하기 위해,  “use” command 사용
 
 	mysql> use webdb;
 
-- Table 생성
+Table 생성
 
 Database를 선택 후,  Database의 전체 테이블 목록을 출력
 
