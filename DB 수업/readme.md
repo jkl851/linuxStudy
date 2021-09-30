@@ -1,5 +1,5 @@
 
-1. 데이터베이스의 특성
+## 1. 데이터베이스의 특성
 - 실시간 접근성(Real-time Accessability)
     사용자의 요구를 즉시 처리할 수 있다.
 - 계속적인 변화(Continuous Evolution)
@@ -9,7 +9,7 @@
 - 내용 참조(Content Reference)
      저장한 데이터 레코드의 위치나 주소가 아닌 사용자가 요구하는 데이터의 내용, 즉 데이터 값에 따라 참조할 수 있어야 한다.
 
-2. 데이터 베이스 관리 시스템 ( Database Management System  =  DBMS )
+## 2. 데이터 베이스 관리 시스템 ( Database Management System  =  DBMS )
 데이터베이스를 관리하는 소프트웨어
 여러 응용 소프트웨어(프로그램) 또는 시스템이 동시에 데이터베이스에 접근하여 사용할 수 있게 한다  
 필수 3기능
@@ -38,7 +38,7 @@ Oracle,  SQL Server, MySQL, DB2 등의 상용 또는 공개 DBMS가 있다.
 백업 및 복구에 대한 관리가 복잡
 부분적 데이터베이스 손실이 전체 시스템을 정지
 
-2.1 데이터 베이스의  종류
+## 2.1 데이터 베이스의  종류
 - 관계형 데이터베이스 (  Relational Database = RDB )
 1970년 IBM E. F. Codd 에 의해 제안되어 수 십년동안 주류 데이터베이스로 성장 확대
 키와 값들의 간단한 관계를  테이블화 시킨 매우 간단한 원칙의 개념의 데이터베이스
@@ -57,7 +57,7 @@ Oracle,  SQL Server, MySQL, DB2 등의 상용 또는 공개 DBMS가 있다.
 - NoSQL
      대용량 데이터의 웹 서비스와 SNS, 클라우드 컴퓨팅의 확대 보급과 대중화로  최근 주목 받는 데이터베이스 기술      
 
-3. 관계형 데이터 베이스
+## 3. 관계형 데이터 베이스
 
 - 논리적(개념적) 데이터 모델링  &  물리적인 데이터베이스
 
@@ -89,7 +89,7 @@ ERD 예시
 Field : Row 와  Column의 교차점으로 Field는 데이터를 포함할 수 있고 없을 때는 NULL 값을 가
           지고 있다고 한다.
 
-4. SQL
+## 4. SQL
 데이터베이스  스키마 생성, 자료의  검색, 수정, 그리고 데이터베이스 객체 접근 관리 등을 위해 고안된 언어
 다수의 데이터베이스  관련 프로그램의  표준언어
 
@@ -102,7 +102,7 @@ Field : Row 와  Column의 교차점으로 Field는 데이터를 포함할 수 �
          - GRANT, REVOKE
 RDBMS - MariaDB 
 
-1. MySQL 
+### 1. MySQL 
 1) 세계에서 가장 인기 있는  Open source DB (하루 50,000번 이상 다운로드)
 
 2) 1995년 첫 공식 버젼 발표(MySQL AB)
@@ -140,7 +140,7 @@ JDBC
 Java database connectivity. 이 API(application programming interfaces) 세트는 ODBC와 유사하게 자바 애플릿이 데이터 베이스를 다룰 수 있는 표준적인 방법을 제공한다.
 
 
-2. MariaDB
+### 2. MariaDB
 1) Monty Program AB라는 회사에서 만든 독립적인 RDBMS
 
 2) MySQL 커뮤니티 코드 베이스를 이용해서 탄생(MySQL 커뮤니티 버젼과 상당부분 호환)
@@ -173,7 +173,7 @@ Java database connectivity. 이 API(application programming interfaces) 세트�
 
 
 
-3. Basic Queries
+### 3. Basic Queries
 여러 문장을 한 줄에 연속으로 붙혀 쿼리 실행이 가능하다.  
     각 문장에 semicolon(;)만 붙혀 주면 된다.
 
